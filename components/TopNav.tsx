@@ -2,10 +2,12 @@ import Link from 'next/link'
 
 import Logo from '@components/logos/Logo'
 
-
-function TopNav() {
+type Props = {
+    className?: string;
+}
+function TopNav({ className }: Props) {
     return (
-        <header className="pt-8 xl:pt-12">
+        <header className={`${className} pt-8 xl:pt-12`}>
             <div className="flex flex-col space-y-6 xl:flex-row w-full xl:space-y-0 xl:justify-between items-center">
                 <div className="animate-slideup">
                     <Logo />

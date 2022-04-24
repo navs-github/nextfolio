@@ -10,9 +10,13 @@ import LogoLinkedin from '@components/logos/LogoLinkedin'
 import LogoInstagram from '@components/logos/LogoInstagram'
 import LogoSpotify from '@components/logos/LogoSpotify'
 
-function Footer() {
+interface Props {
+    className?: string;
+}
+
+function Footer({ className }: Props) {
     return (
-        <footer className="flex items-center justify-center border-t border-opacity-30 border-warm -mx-6 px-6 xl:-mx-44 xl:px-44 2xl:px-56 2xl:-mx-56 py-12 xl:py-24 bg-dark">
+        <footer className={`${className} -mx-6 px-6 xl:-mx-44 xl:px-44 2xl:px-56 2xl:-mx-56 py-12 xl:py-24 flex items-center justify-center border-t border-opacity-30 border-warm bg-dark`}>
             {/* 💻  */}
             <div className="hidden xl:flex flex-row space-x-44 text-lg 2xl:text-xl">
                 <nav className="flex flex-col items-center">

@@ -21,7 +21,6 @@ function Logo() {
                 </div>
             </div>
         </a>
-
     )
 }
 
