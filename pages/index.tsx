@@ -18,7 +18,7 @@ function Landing({ }: Props) {
         <>
             <Layout>
                 <TopNav className="pt-8 xl:pt-12" /> {/* pull out connecting layout styles in class name */}
-                <Hero className="mt-20 xl:mt-32" /> {/* eg. pull mt-12 py-24 */}
+                <Hero className="mt-20 xl:mt-28" /> {/* eg. pull mt-12 py-24 */}
                 <Superpowers className="mt-64 2xl:mt-72" />
                 <WorkSection className="mt-64 2xl:mt-72" />
                 <ContactSection className="mt-64 2xl:mt-72" /> {/* like this */}
