@@ -8,7 +8,7 @@ type Props = {
 function ArrowLinkInternal({ to, text }: Props) {
     return (
         <Link href={to}>
-            <span className="group flex flex-row items-center space-x-2.5">
+            <span className="group flex flex-row items-center space-x-2.5 cursor-pointer">
                 <span className="text-base xl:text-xl 2xl:text-2xl tracking-tight font-work font-medium uppercase group-hover:text-yellow-base transition-colors duration-200">
                     {text}
                 </span>

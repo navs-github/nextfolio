@@ -1,11 +1,9 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
 
-
-
-import BoxHeading from '../../BoxHeading'
-import BigText from '../../BigText'
-import Works from '../../Works'
+import BoxHeading from '@components/common/BoxHeading';
+import BigText from '@components/common/BigText';
+import Works from '@components/common/Works';
 
 interface Props {
     className?: string;

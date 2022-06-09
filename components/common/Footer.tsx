@@ -1,7 +1,5 @@
-//packages
 import Link from 'next/link'
 
-//assets
 import Logo from '@components/logos/Logo'
 import LogoDribbble from '@components/logos/LogoDribbble'
 import LogoAngel from '@components/logos/LogoAngel'
@@ -38,28 +36,28 @@ function Footer({ className }: Props) {
                     <ul className="flex flex-col space-y-4">
                         <li className="text-base uppercase">NAVIGATION</li>
                         <Link href="/">
-                            <li className="hover:text-yellow-base transition-colors duration-200">Home</li>
+                            <li className="text-link">Home</li>
                         </Link>
                         <Link href="/about">
-                            <li className="hover:text-yellow-base transition-colors duration-200">About</li>
+                            <li className="text-link">About</li>
                         </Link>
                         <Link href="/work">
-                            <li className="hover:text-yellow-base transition-colors duration-200">Work</li>
+                            <li className="text-link">Work</li>
                         </Link>
                         <Link href="/contact">
-                            <li className="hover:text-yellow-base transition-colors duration-200">Contact</li>
+                            <li className="text-link">Contact</li>
                         </Link>
                     </ul>
                     <ul className="flex flex-col space-y-4">
                         <li className="text-base uppercase">EXTRAS</li>
                         <Link href="/books">
-                            <li className="hover:text-yellow-base transition-colors duration-200">Books</li>
+                            <li className="text-link">Books</li>
                         </Link>
                         <Link href="/notion">
-                            <li className="hover:text-yellow-base transition-colors duration-200">Notion</li>
+                            <li className="text-link">Notion</li>
                         </Link>
                         <Link href="/playlists">
-                            <li className="hover:text-yellow-base transition-colors duration-200">Playlists</li>
+                            <li className="text-link">Playlists</li>
                         </Link>
                     </ul>
                 </nav>
@@ -96,7 +94,7 @@ function Footer({ className }: Props) {
                     </ul>
                 </nav>
                 <nav className="flex flex-col items-center">
-                    <Logo></Logo>
+                    <Logo />
                     <ul className="mt-7 flex flex-row space-x-9">
                         <li className=""><LogoGithub></LogoGithub></li>
                         <li className=""><LogoDribbble></LogoDribbble></li>

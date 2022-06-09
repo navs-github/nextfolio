@@ -2,7 +2,7 @@ import Layout from '@components/Layout'
 import TopNav from '@components/TopNav'
 import Footer from '@components/Footer'
 
-import ContactSection from '@components/pages/sections/ContactSection';
+import ContactSection from '@components/sections/ContactSection';
 
 function Contact() {
 

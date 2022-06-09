@@ -2,12 +2,12 @@
 import { useInView } from 'react-intersection-observer';
 
 //components
-import Layout from '@components/Layout'
-import TopNav from '@components/TopNav'
-import BoxHeading from '@components/BoxHeading'
-import BigText from '@components/BigText'
-import ArrowLinkExternal from '@components/ArrowLinkExternal'
-import Footer from '@components/Footer'
+import Layout from '@components/common/Layout'
+import TopNav from '@components/common/TopNav'
+import BoxHeading from '@components/common/BoxHeading'
+import BigText from '@components/common/BigText'
+import ArrowLinkExternal from '@components/common/ArrowLinkExternal'
+import Footer from '@components/common/Footer'
 
 //assets
 import unicodes_preview_large from '../img/unicodes_preview_large.webp'

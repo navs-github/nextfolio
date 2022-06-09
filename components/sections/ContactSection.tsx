@@ -1,10 +1,10 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
 
-import BoxHeading from '@components/BoxHeading'
-import BigText from '@components/BigText'
-import ArrowLinkExternal from '@components/ArrowLinkExternal';
-import ArrowLinkSet from '@components/ArrowLinkSet';
+import BoxHeading from '@components/common/BoxHeading'
+import BigText from '@components/common/BigText'
+import ArrowLinkExternal from '@components/common/ArrowLinkExternal';
+import ArrowLinkSet from '@components/common/ArrowLinkSet';
 
 
 import LogoAngel from '@components/logos/LogoAngel'

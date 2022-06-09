@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        // 'grain': "url('../pattern.png')",
         'grain': "url('../img/grain.webp')",
       }),
       colors: {

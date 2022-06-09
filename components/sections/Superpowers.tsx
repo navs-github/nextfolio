@@ -1,8 +1,8 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
 
-import BoxHeading from '../../BoxHeading'
-import BigText from '../../BigText'
+import BoxHeading from '@components/common/BoxHeading'
+import BigText from '@components/common/BigText'
 
 import LogoDribbble from '@components/logos/LogoDribbble'
 import LogoGithub from '@components/logos/LogoGithub'

@@ -44,6 +44,29 @@
         @apply bg-slate-300;
     }
 
+    .first-section{
+        @apply mt-20;
+        @apply xl:mt-32;
+        @apply flex;
+        @apply flex-col;
+        @apply items-start;
+    }
+
+    .first-section-content{
+        @apply mt-8;
+        @apply xl:mt-12;
+        @apply 2xl:mt-16;
+        @apply space-y-6;
+        @apply xl:space-y-16;
+        @apply 2xl:space-y-16;
+        @apply opacity-0;
+        @apply animate-fadein;
+    }
+
+    .mt-between-sections{
+        @apply mt-64;
+    }
+
     /* Typography Utilities */
     .offset-underline {
         @apply underline;
@@ -68,12 +91,21 @@
         @apply text-slate-900;
     }
 
+    .body{
+        @apply leading-[180%]
+    }
+
     address {
         @apply not-italic;
     }
 
     h1 {
         @apply m-0 !important;
+    }
+
+    .alt-serif{
+        @apply font-bold;
+        @apply font-lora;
     }
 
     /* Component Utilities */
@@ -157,6 +189,11 @@
         @apply hover:border-blue-700;
         @apply hover:border-2;
         @apply hover:shadow-md;
+    }
+
+    .text-link{
+        @apply hover:text-yellow-base;
+        @apply cursor-pointer;
     }
 
     /* Color Utilities */

@@ -15,16 +15,16 @@ function TopNav({ className }: Props) {
                 <nav className="w-full xl:w-auto font-work font-medium text-sm xl:text-lg 2xl:text-xl">
                     <ul className="w-full flex flex-row justify-between xl:justify-start xl:space-x-16">
                         <Link href="/work">
-                            <li className="opacity-0 animate-slideup50 hover:text-yellow-base">WORK</li>
+                            <li className="opacity-0 animate-slideup50 text-link">WORK</li>
                         </Link>
                         <Link href="/about">
-                            <li className="opacity-0 animate-slideup100 hover:text-yellow-base">ABOUT</li>
+                            <li className="opacity-0 animate-slideup100 text-link">ABOUT</li>
                         </Link>
                         <Link href="/process">
-                            <li className="opacity-0 animate-slideup150 hover:text-yellow-base">PROCESS</li>
+                            <li className="opacity-0 animate-slideup150 text-link">PROCESS</li>
                         </Link>
                         <Link href="/contact">
-                            <li className="opacity-0 animate-slideup200 hover:text-yellow-base">CONTACT</li>
+                            <li className="opacity-0 animate-slideup200 text-link">CONTACT</li>
                         </Link>
                     </ul>
                 </nav>

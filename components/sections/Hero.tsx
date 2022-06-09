@@ -2,10 +2,10 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 
 
-import BoxHeading from '../../BoxHeading'
-import BigTextHero from '../../BigTextHero'
-import ArrowLinkInternal from '../../ArrowLinkInternal';
-import ArrowLinkSet from '../../ArrowLinkSet';
+import BoxHeading from '@components/common/BoxHeading'
+import BigTextHero from '@components/common/BigTextHero'
+import ArrowLinkInternal from '@components/common/ArrowLinkInternal';
+import ArrowLinkSet from '@components/common/ArrowLinkSet';
 
 type Props = {
     className: string;
@@ -19,7 +19,7 @@ function Hero({ className }: Props) {
     return (
         <main ref={heroRef} className={`${className}`}>
             <div className="flex-col-start">
-                <BoxHeading inView={inViewHero}>ABHINAV VERMA</BoxHeading>
+                <BoxHeading inView={inViewHero}>INTRO</BoxHeading>
                 <p className="mt-8 xl:mt-12 leading-[180%] opacity-0 animate-fadein">A front-end developer and product designer. I spend my time ideating, designing, and coding polished digital interactions.</p>
                 <ArrowLinkSet>
                     <li className="">
@@ -30,7 +30,7 @@ function Hero({ className }: Props) {
                     </li>
                 </ArrowLinkSet>
                 <div className="mt-12 xl:mt-16 self-center animate-slideright">
-                    <BigTextHero><span className="">CREATIVE</span> ENGINEER</BigTextHero>
+                    <BigTextHero>CREATIVE ENGINEER</BigTextHero>
                 </div>
             </div>
         </main>
