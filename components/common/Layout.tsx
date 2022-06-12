@@ -10,7 +10,6 @@ function Layout({ children }: Props) {
                 {children}
             </div>
         </div>
-
     )
 }
 export default Layout
