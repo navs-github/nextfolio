@@ -1,10 +1,10 @@
 import { useInView } from 'react-intersection-observer';
 
-import Layout from '@components/Layout';
-import TopNav from '@components/TopNav'
-import BoxHeading from '@components/BoxHeading'
-import Works from '@components/Works'
-import Footer from '@components/Footer'
+import Layout from '@components/common/Layout';
+import TopNav from '@components/common/TopNav'
+import BoxHeading from '@components/common/BoxHeading'
+import Works from '@components/common/Works'
+import Footer from '@components/common/Footer'
 
 
 
