@@ -11,7 +11,6 @@ import ArrowLinkExternal from '@components/common/ArrowLinkExternal';
 import ArrowLinkSet from '@components/common/ArrowLinkSet'
 
 function About() {
-    //interesction observers for each section
     const [introRef, inViewIntro] = useInView({
         triggerOnce: true,
         rootMargin: '-50px 0px',
