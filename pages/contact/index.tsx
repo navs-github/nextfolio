@@ -1,6 +1,6 @@
-import Layout from '@components/Layout'
-import TopNav from '@components/TopNav'
-import Footer from '@components/Footer'
+import Layout from '@components/common/Layout'
+import TopNav from '@components/common/TopNav'
+import Footer from '@components/common/Footer'
 
 import ContactSection from '@components/sections/ContactSection';
 

@@ -2,12 +2,12 @@
 import { useInView } from 'react-intersection-observer';
 
 //components
-import Layout from '@components/Layout'
-import TopNav from '@components/TopNav'
-import BoxHeading from '@components/BoxHeading'
-import BigText from '@components/BigText'
-import ArrowLinkInternal from "@components/ArrowLinkInternal"
-import Footer from "@components/Footer"
+import Layout from '@components/common/Layout'
+import TopNav from '@components/common/TopNav'
+import BoxHeading from '@components/common/BoxHeading'
+import BigText from '@components/common/BigText'
+import ArrowLinkInternal from "@components/common/ArrowLinkInternal"
+import Footer from "@components/common/Footer"
 
 //assets
 import enroller_preview_large from '../img/enroller_preview_large.webp'
