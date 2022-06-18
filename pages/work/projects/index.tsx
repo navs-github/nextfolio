@@ -1,5 +1,5 @@
 
-import Project from '@components/Project'
+import Project from '@components/common/Project'
 
 import enroller_preview from '@img/enroller_preview.webp'
 import unicodes_preview from '@img/unicodes_preview.webp'

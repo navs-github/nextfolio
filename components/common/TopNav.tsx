@@ -14,18 +14,26 @@ function TopNav({ className }: Props) {
                 </div>
                 <nav className="w-full xl:w-auto font-work font-medium text-sm xl:text-lg 2xl:text-xl">
                     <ul className="w-full flex flex-row justify-between xl:justify-start xl:space-x-16">
-                        <Link href="/work">
-                            <li className="opacity-0 animate-slideup50 text-link">WORK</li>
-                        </Link>
-                        <Link href="/about">
-                            <li className="opacity-0 animate-slideup100 text-link">ABOUT</li>
-                        </Link>
-                        <Link href="/process">
-                            <li className="opacity-0 animate-slideup150 text-link">PROCESS</li>
-                        </Link>
-                        <Link href="/contact">
-                            <li className="opacity-0 animate-slideup200 text-link">CONTACT</li>
-                        </Link>
+                        <li className="opacity-0 animate-slideup50 text-link">
+                            <Link href="/work" passHref>
+                                WORK
+                            </Link>
+                        </li>
+                        <li className="opacity-0 animate-slideup100 text-link">
+                            <Link href="/about" passHref>
+                                ABOUT
+                            </Link>
+                        </li>
+                        <li className="opacity-0 animate-slideup150 text-link">
+                            <Link href="/process" passHref>
+                                PROCESS
+                            </Link>
+                        </li>
+                        <li className="opacity-0 animate-slideup200 text-link">
+                            <Link href="/contact" passHref>
+                                CONTACT
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

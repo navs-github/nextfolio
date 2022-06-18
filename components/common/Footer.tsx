@@ -29,34 +29,32 @@ function Footer({ className }: Props) {
                     </ul>
                     <span className="mt-8">Based in Toronto</span>
                     <span className="mt-2 text-sm">© 2021 Abhinav Verma | All Rights Reserved</span>
-
-
                 </nav>
                 <nav className="flex flex-row space-x-20">
                     <ul className="flex flex-col space-y-4">
                         <li className="text-base uppercase">NAVIGATION</li>
-                        <Link href="/">
+                        <Link href="/" passHref>
                             <li className="text-link">Home</li>
                         </Link>
-                        <Link href="/about">
+                        <Link href="/about" passHref>
                             <li className="text-link">About</li>
                         </Link>
-                        <Link href="/work">
+                        <Link href="/work" passHref>
                             <li className="text-link">Work</li>
                         </Link>
-                        <Link href="/contact">
+                        <Link href="/contact" passHref>
                             <li className="text-link">Contact</li>
                         </Link>
                     </ul>
                     <ul className="flex flex-col space-y-4">
                         <li className="text-base uppercase">EXTRAS</li>
-                        <Link href="/books">
+                        <Link href="/books" passHref>
                             <li className="text-link">Books</li>
                         </Link>
-                        <Link href="/notion">
+                        <Link href="/notion" passHref>
                             <li className="text-link">Notion</li>
                         </Link>
-                        <Link href="/playlists">
+                        <Link href="/playlists" passHref>
                             <li className="text-link">Playlists</li>
                         </Link>
                     </ul>
@@ -67,28 +65,28 @@ function Footer({ className }: Props) {
                 <nav className="flex flex-row space-x-36">
                     <ul className="flex flex-col space-y-4">
                         <li className="text-sm uppercase">NAVIGATION</li>
-                        <Link href="/">
+                        <Link href="/" passHref>
                             <li className="hover:text-yellow-base transition-colors duration-200">Home</li>
                         </Link>
-                        <Link href="/about">
+                        <Link href="/about" passHref>
                             <li className="hover:text-yellow-base transition-colors duration-200">About</li>
                         </Link>
-                        <Link href="/work">
+                        <Link href="/work" passHref>
                             <li className="hover:text-yellow-base transition-colors duration-200">Work</li>
                         </Link>
-                        <Link href="/contact">
+                        <Link href="/contact" passHref>
                             <li className="hover:text-yellow-base transition-colors duration-200">Contact</li>
                         </Link>
                     </ul>
                     <ul className="flex flex-col space-y-4">
                         <li className="text-sm uppercase">EXTRAS</li>
-                        <Link href="/books">
+                        <Link href="/books" passHref>
                             <li className="hover:text-yellow-base transition-colors duration-200">Books</li>
                         </Link>
-                        <Link href="/notion">
+                        <Link href="/notion" passHref>
                             <li className="hover:text-yellow-base transition-colors duration-200">Notion</li>
                         </Link>
-                        <Link href="/playlists">
+                        <Link href="/playlists" passHref>
                             <li className="hover:text-yellow-base transition-colors duration-200">Playlists</li>
                         </Link>
                     </ul>

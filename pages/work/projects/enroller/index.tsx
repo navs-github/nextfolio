@@ -1,5 +1,6 @@
 //packages
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
 //components
 import Layout from '@components/common/Layout'
@@ -10,7 +11,7 @@ import ArrowLinkInternal from "@components/common/ArrowLinkInternal"
 import Footer from "@components/common/Footer"
 
 //assets
-import enroller_preview_large from '../img/enroller_preview_large.webp'
+import enroller_preview_large from '@img/enroller_preview_large.webp'
 
 
 function Enroller() {
@@ -31,7 +32,9 @@ function Enroller() {
                 <div className={"flex flex-col items-start opacity-0 " + (inViewFirst ? 'animate-fadein' : 'animate-none')}>
                     <p className="mt-8 xl:mt-12 leading-[180%]">Enroller is a university SaaS app that makes administrative tasks easy for students by simplifying complex processes such as course management and tuition payment.</p>
                     <div className="mt-12 xl:mt-16 self-center flex flex-col">
-                        <img src={enroller_preview_large.src} className="object-cover h-96 2xl:h-[500px] p-2 border border-warm" alt="" srcSet="" />
+                        <div className="relative h-96 2xl:h-[500px] p-2 border border-warm">
+                            <Image src={enroller_preview_large.src} layout="fill" className="object-cover" alt="" />
+                        </div>
                         <BigText>ENROLLER</BigText>
                     </div>
                 </div>

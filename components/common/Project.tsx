@@ -1,5 +1,6 @@
 //packages
 import Link from 'next/link'
+import Image from 'next/image'
 
 //components
 import ArrowLinkSet from './ArrowLinkSet'
@@ -23,8 +24,10 @@ function Project({ to, title, body, thumb, link }: Props) {
                 <div className="w-full h-[1px] bg-warm opacity-30"></div>
             </div>
             <p className="mt-4 xl:mt-6">{body}</p>
-            <Link href={to}>
-                <img src={thumb.src} className="2xl:h-[400px] w-[1400px] mt-6 xl:mt-12 p-1 border border-warm border-opacity-30 xl:opacity-80 xl:hover:opacity-100" width="700" height="200" alt="" srcSet="" />
+            <Link href={to} passHref>
+                <div className="mt-6 xl:mt-12 relative h-[300px] w-full 2xl:h-[400px] 2xl:w-[1400px] border border-warm border-opacity-30 xl:opacity-80 xl:hover:opacity-100">
+                    <Image src={thumb.src} layout="fill" className="object-cover cursor-pointer" alt="" />
+                </div>
             </Link>
             <ArrowLinkSet>
                 <li>

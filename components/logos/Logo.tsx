@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Logo() {
     return (
-        <a href="/">
+        <Link href="/" passHref>
             <div className="group flex flex-col space-y-2 relative">
                 <svg className="2xl:hidden" width="129" height="50" viewBox="0 0 129 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M52.048 14.17V40H49.906V10.18H51.67L72.46 36.43V10.18H74.602V40H72.502L52.048 14.17ZM95.4524 10.18H97.3004L102.886 40H100.618L98.7704 30.172H85.3724L79.4084 40H77.0984L95.4524 10.18ZM98.6024 28.408L95.8304 12.784L86.2544 28.408H98.6024ZM102.59 10.18H104.858L109.814 37.312L126.236 10.18H128.504L110.192 40H108.218L102.59 10.18Z" fill="#EDEBD7" />
@@ -20,7 +20,7 @@ function Logo() {
                     <span className="whitespace-nowrap text-sm 2xl:text-base font-work font-medium tracking-wide opacity-0 group-hover:opacity-100">BACK TO HOME</span>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 

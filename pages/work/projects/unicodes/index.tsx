@@ -1,7 +1,6 @@
-//packages
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
-//components
 import Layout from '@components/common/Layout'
 import TopNav from '@components/common/TopNav'
 import BoxHeading from '@components/common/BoxHeading'
@@ -9,7 +8,6 @@ import BigText from '@components/common/BigText'
 import ArrowLinkExternal from '@components/common/ArrowLinkExternal'
 import Footer from '@components/common/Footer'
 
-//assets
 import unicodes_preview_large from "@img/unicodes_preview_large.webp"
 
 function Unicodes() {
@@ -32,7 +30,9 @@ function Unicodes() {
                 <div className={"flex flex-col items-start opacity-0 " + (inViewFirst ? 'animate-fadein' : 'animate-none')}>
                     <p className="mt-8 xl:mt-12 leading-[180%]">A web tool that allows quick access to unique special characters. Implemented with live search for a smooth, one-page experience.</p>
                     <div className="mt-12 xl:mt-16 self-center flex flex-col">
-                        <img src={unicodes_preview_large.src} className="object-cover h-96 2xl:h-[500px] p-2 border border-warm" alt="" srcSet="" />
+                        <div className="relative h-96 2xl:h-[500px] p-2 border border-warm">
+                            <Image src={unicodes_preview_large.src} layout="fill" className="object-cover" alt="" />
+                        </div>
                         <BigText>UNICODES</BigText>
                     </div>
                 </div>

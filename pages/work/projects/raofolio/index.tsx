@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 import Layout from "@components/common/Layout"
 import TopNav from "@components/common/TopNav"
@@ -28,7 +29,9 @@ function Raofolio() {
                 <div className={"flex flex-col items-start opacity-0 " + (inViewFirst ? "animate-fadein" : "animate-none")}>
                     <p className="mt-8 xl:mt-12 leading-[180%]">A fashion model"s online portfolio. Designed with a minimal dark theme to keep the focus on the finer details of the imagery.</p>
                     <div className="mt-12 xl:mt-16 self-center flex flex-col">
-                        <img src={raofolio_preview_large.src} className="object-cover h-96 2xl:h-[500px] p-2 border border-warm" alt="" srcSet="" />
+                        <div className="relative h-96 2xl:h-[500px] p-2 border border-warm">
+                            <Image src={raofolio_preview_large.src} layout="fill" className="object-cover" alt="" />
+                        </div>
                         <BigText>RAOFOLIO</BigText>
                     </div>
                 </div>
