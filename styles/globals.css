@@ -21,16 +21,16 @@
     }
 
     .flex-col-center {
-      @apply flex;
-      @apply flex-col;
-      @apply items-center;
-  }
+        @apply flex;
+        @apply flex-col;
+        @apply items-center;
+    }
 
-  .flex-col-start{
-    @apply flex;
-    @apply flex-col;
-    @apply items-start;
-  }
+    .flex-col-start {
+        @apply flex;
+        @apply flex-col;
+        @apply items-start;
+    }
 
     .flex-col-between {
         @apply flex;
@@ -44,7 +44,7 @@
         @apply bg-slate-300;
     }
 
-    .first-section{
+    .first-section {
         @apply mt-20;
         @apply xl:mt-32;
         @apply flex;
@@ -52,7 +52,7 @@
         @apply items-start;
     }
 
-    .first-section-content{
+    .first-section-content {
         @apply mt-8;
         @apply xl:mt-12;
         @apply 2xl:mt-16;
@@ -63,7 +63,7 @@
         @apply animate-fadein;
     }
 
-    .mt-between-sections{
+    .mt-between-sections {
         @apply mt-64;
     }
 
@@ -91,8 +91,8 @@
         @apply text-slate-900;
     }
 
-    .body{
-        @apply leading-[180%]
+    .body {
+        @apply leading-[180%];
     }
 
     address {
@@ -103,30 +103,30 @@
         @apply m-0 !important;
     }
 
-    .alt-serif{
+    .alt-serif {
         @apply font-bold;
         @apply font-lora;
     }
 
     /* Component Utilities */
-    .btn{
+    .btn {
         @apply flex;
         @apply justify-center;
         @apply rounded-[4px];
         @apply font-medium;
     }
-    .btn-primary{
+    .btn-primary {
         @apply text-white;
         @apply bg-[#1272A5];
         @apply border-[2px];
         @apply border-gray-900;
     }
 
-    .btn-secondary{
-        @apply hover:offset-underline
+    .btn-secondary {
+        @apply hover:offset-underline;
     }
 
-    .btn-ghost{
+    .btn-ghost {
         @apply border-[2px];
         @apply border-black;
     }
@@ -136,7 +136,7 @@
         @apply py-[7px];
         @apply text-[14px];
     }
-    
+
     .btn-lg {
         @apply px-8;
         @apply py-[10px];
@@ -164,14 +164,14 @@
         @apply opacity-50;
     }
 
-    .tag-grid{
+    .tag-grid {
         @apply grid;
         @apply grid-cols-3;
         @apply gap-x-2;
         @apply gap-y-2;
     }
 
-    .tag{
+    .tag {
         @apply bg-opacity-70;
         @apply px-2.5;
         @apply py-1.5;
@@ -184,15 +184,15 @@
         @apply bg-slate-100;
     }
 
-    .tag-link{
+    .tag-link {
         @apply bg-blue-50;
         @apply hover:border-blue-700;
         @apply hover:border-2;
         @apply hover:shadow-md;
     }
 
-    .text-link{
-        @apply hover:text-yellow-base;
+    .text-link {
+        @apply hover:text-theme-accent;
         @apply cursor-pointer;
     }
 
@@ -232,8 +232,8 @@
         @apply shrink-0;
     }
 
-    .w-long{
-        @apply w-[760px]
+    .w-long {
+        @apply w-[760px];
     }
 }
 
