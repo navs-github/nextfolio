@@ -33,8 +33,6 @@ function TopNav({ className }: Props) {
                         selectedAccentColor={selectedAccentColor}
                         setThemeColor={setThemeColor}
                     />
-
-                    {/* <div className="opacity-0 bg-red-accent bg-yellow-accent bg-green-accent"></div> */}
                 </div>
                 <nav className="ml-auto w-full xl:w-auto font-work font-medium text-sm xl:text-lg 2xl:text-xl">
                     <ul className="w-full flex flex-row justify-between xl:justify-start xl:space-x-16">
