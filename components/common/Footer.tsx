@@ -66,28 +66,28 @@ function Footer({ className }: Props) {
                     <ul className="flex flex-col space-y-4">
                         <li className="text-sm uppercase">NAVIGATION</li>
                         <Link href="/" passHref>
-                            <li className="hover:text-yellow-base transition-colors duration-200">Home</li>
+                            <li className="hover:text-theme-accent transition-colors duration-200">Home</li>
                         </Link>
                         <Link href="/about" passHref>
-                            <li className="hover:text-yellow-base transition-colors duration-200">About</li>
+                            <li className="hover:text-theme-accent transition-colors duration-200">About</li>
                         </Link>
                         <Link href="/work" passHref>
-                            <li className="hover:text-yellow-base transition-colors duration-200">Work</li>
+                            <li className="hover:text-theme-accent transition-colors duration-200">Work</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="hover:text-yellow-base transition-colors duration-200">Contact</li>
+                            <li className="hover:text-theme-accent transition-colors duration-200">Contact</li>
                         </Link>
                     </ul>
                     <ul className="flex flex-col space-y-4">
                         <li className="text-sm uppercase">EXTRAS</li>
                         <Link href="/books" passHref>
-                            <li className="hover:text-yellow-base transition-colors duration-200">Books</li>
+                            <li className="hover:text-theme-accent transition-colors duration-200">Books</li>
                         </Link>
                         <Link href="/notion" passHref>
-                            <li className="hover:text-yellow-base transition-colors duration-200">Notion</li>
+                            <li className="hover:text-theme-accent transition-colors duration-200">Notion</li>
                         </Link>
                         <Link href="/playlists" passHref>
-                            <li className="hover:text-yellow-base transition-colors duration-200">Playlists</li>
+                            <li className="hover:text-theme-accent transition-colors duration-200">Playlists</li>
                         </Link>
                     </ul>
                 </nav>

@@ -10,12 +10,17 @@ module.exports = {
         'grain': "url('../img/grain.webp')",
       }),
       colors: {
+        blue: {
+          base: '#00bcd4',
+          accent: '#00bcd4',
+        },
         yellow: {
           base: '#E3B23C',
           accent: '#EFAA06',
         },
         warm: '#EDEBD7',
         dark: '#0B0E13',
+        'theme-accent': 'var(--accent)',
       },
 
       keyframes: {

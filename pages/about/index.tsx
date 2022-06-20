@@ -80,9 +80,9 @@ function About() {
             <section ref={toolsRef} className="mt-40 xl:mt-52 2xl:mt-56 flex flex-col items-start">
                 <BoxHeading inView={inViewTools}>TOOLS</BoxHeading>
                 <div className={"mt-8 xl:mt-12 2xl:mt-16 space-y-6 xl:space-y-16 2xl:space-y-16 opacity-0 " + (inViewTools ? 'animate-fadein' : 'animate-none')}>
-                    <p className="leading-[180%] group">My design tool of choice is <span className="alt-serif group-hover:text-yellow-accent">Figma</span>. It's packed with intuitive and time-saving features, along with a wide selection of useful community-made plugins. I plan on writing blog posts about particular Figma features that I love — Auto Layout, for example.</p>
-                    <p className="leading-[180%] group">I'm a <span className="alt-serif group-hover:text-yellow-accent">React</span> enthusiast with solid JavaScript fundamentals and all sorts of CSS tricks up my sleeve. Like most developers, I'm a VS Code and GitHub superuser.</p>
-                    <p className="leading-[180%] group">I use <span className="alt-serif group-hover:text-yellow-accent">Notion</span> to harness my productivity, track projects and write stuff down. Since I'm often handling lots of different workflows simultaneously, keeping all that information indexed somewhere is pretty much mandatory.</p>
+                    <p className="leading-[180%] group">My design tool of choice is <span className="alt-serif group-hover:text-theme-accent">Figma</span>. It's packed with intuitive and time-saving features, along with a wide selection of useful community-made plugins. I plan on writing blog posts about particular Figma features that I love — Auto Layout, for example.</p>
+                    <p className="leading-[180%] group">I'm a <span className="alt-serif group-hover:text-theme-accent">React</span> enthusiast with solid JavaScript fundamentals and all sorts of CSS tricks up my sleeve. Like most developers, I'm a VS Code and GitHub superuser.</p>
+                    <p className="leading-[180%] group">I use <span className="alt-serif group-hover:text-theme-accent">Notion</span> to harness my productivity, track projects and write stuff down. Since I'm often handling lots of different workflows simultaneously, keeping all that information indexed somewhere is pretty much mandatory.</p>
                 </div>
             </section>
             {/* Contact Section 🤙 */}
@@ -90,8 +90,8 @@ function About() {
                 <BoxHeading inView={inViewLife}>LIFE</BoxHeading>
                 <div className={"mt-8 xl:mt-12 2xl:mt-16 space-y-6 xl:space-y-16 2xl:space-y-16 opacity-0 " + (inViewLife ? 'animate-fadein' : 'animate-none')}>
                     <p className="leading-[180%] group">At home, I take care of my plants and my pet cat, Blue. I spend sporadic chunks of my time organizing my belongings and designing the interior of my home. </p>
-                    <p className="leading-[180%] group">I'm a <span className="alt-serif group-hover:text-yellow-accent">competitive</span> guy with an affinity for team sports. I will take every opportunity I can get to play a good game of Volleyball. I also play competitive team-based video games like Valorant.</p>
-                    <p className="leading-[180%] group">Above all, I make it my mission to bring <span className="alt-serif group-hover:text-yellow-accent">positivity</span> wherever I go. I put real effort into my relationships with people and aim to surround myself with like-minded folk.</p>
+                    <p className="leading-[180%] group">I'm a <span className="alt-serif group-hover:text-theme-accent">competitive</span> guy with an affinity for team sports. I will take every opportunity I can get to play a good game of Volleyball. I also play competitive team-based video games like Valorant.</p>
+                    <p className="leading-[180%] group">Above all, I make it my mission to bring <span className="alt-serif group-hover:text-theme-accent">positivity</span> wherever I go. I put real effort into my relationships with people and aim to surround myself with like-minded folk.</p>
                 </div>
                 <div className={"mt-8 xl:mt-16 2xl:mt-16 space-y-6 xl:space-y-16 2xl:space-y-16 opacity-0 " + (inViewLife ? 'animate-fadein' : 'animate-none')}>
                     <ArrowLinkExternal text="BEFRIEND ME" link="https://www.instagram.com/navs_inspo/"></ArrowLinkExternal>

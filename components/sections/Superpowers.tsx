@@ -22,17 +22,17 @@ function Superpowers({ className }: Props) {
                 <BoxHeading inView={inView}>SUPERPOWERS</BoxHeading>
                 <div className={"mt-7 xl:mt-12 w-full grid grid-cols-2 gap-y-10 xl:flex xl:flex-row xl:justify-between leading-[160%] opacity-0 " + (inView ? 'animate-fadein' : 'animate-none')}>
                     <ul className="group flex flex-col space-y-5 xl:space-y-10">
-                        <li className="">UX <span className="font-lora font-bold group-hover:text-yellow-base">Design</span></li>
+                        <li className="">UX <span className="font-lora font-bold group-hover:text-theme-accent">Design</span></li>
                         <li className="">Interface Design</li>
                         <li className="">Figma Mastery</li>
                     </ul>
                     <ul className="group flex flex-col space-y-5 xl:space-y-10">
-                        <li className=" whitespace-nowrap"><span className="group-hover:text-yellow-base font-lora font-bold">Front-end</span> Architecture</li>
+                        <li className=" whitespace-nowrap"><span className="group-hover:text-theme-accent font-lora font-bold">Front-end</span> Architecture</li>
                         <li className="">React Development</li>
                         <li className="">CSS Mastery</li>
                     </ul>
                     <ul className="group flex flex-col space-y-5 xl:space-y-10">
-                        <li className=""><span className="group-hover:text-yellow-base font-lora font-bold">Art</span> Direction</li>
+                        <li className=""><span className="group-hover:text-theme-accent font-lora font-bold">Art</span> Direction</li>
                         <li className="">Photography</li>
                     </ul>
                 </div>
