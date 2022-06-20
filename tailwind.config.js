@@ -4,19 +4,39 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./components/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'bg-yellow-accent',
+    'text-yellow-accent',
+    'border-yellow-accent',
+
+    'bg-green-accent',
+    'text-green-accent',
+    'border-green-accent',
+
+    'bg-red-accent',
+    'text-red-accent',
+    'border-red-accent',
+  ],
   theme: {
     extend: {
       backgroundImage: theme => ({
         'grain': "url('../img/grain.webp')",
       }),
       colors: {
+        yellow: {
+          base: '#E3B23C',
+          accent: '#EFAA06',
+        },
         blue: {
           base: '#00bcd4',
           accent: '#00bcd4',
         },
-        yellow: {
-          base: '#E3B23C',
-          accent: '#EFAA06',
+        green: {
+          base: "#556F44",
+          accent: "#556F44",
+        },
+        red: {
+          accent: "#D8315B",
         },
         warm: '#EDEBD7',
         dark: '#0B0E13',

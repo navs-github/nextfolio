@@ -1,6 +1,7 @@
 import { useState } from "react";
-
 import Link from 'next/link'
+
+import ThemeSwitch from "@components/inputs/ThemeSwitch";
 
 import Logo from '@components/logos/Logo'
 
@@ -8,7 +9,7 @@ type Props = {
     className?: string;
 }
 function TopNav({ className }: Props) {
-    const [accentColor, setAccentColor] = useState<string>('yellow');
+    const [selectedAccentColor, setSelectedAccentColor] = useState<string>('yellow');
 
     return (
         <header className={`${className} pt-8 xl:pt-12`}>
@@ -17,18 +18,23 @@ function TopNav({ className }: Props) {
                     <Logo />
                 </div>
                 <div className="ml-12 hidden xl:flex flex-row items-center space-x-2">
-                    <button
-                        className={`p-0.5 border-2 border-warm rounded-full ${accentColor == "yellow" ? "border-opacity-100" : "border-opacity-50"} hover:border-opacity-100 transition-opacity duration-200 ease overflow-hidden`}
-                        onClick={() => { setThemeColor("yellow") }}
-                    >
-                        <div className="w-4 h-4 rounded-full bg-yellow-accent"></div>
-                    </button>
-                    <button
-                        className={`p-0.5 border-2 border-warm rounded-full ${accentColor == "blue" ? "border-opacity-100" : "border-opacity-50"} hover:border-opacity-100 transition-opacity duration-200 ease group overflow-hidden`}
-                        onClick={() => { setThemeColor("blue") }}
-                    >
-                        <div className="w-4 h-4 rounded-full bg-blue-accent"></div>
-                    </button>
+                    <ThemeSwitch
+                        color={"yellow"}
+                        selectedAccentColor={selectedAccentColor}
+                        setThemeColor={setThemeColor}
+                    />
+                    <ThemeSwitch
+                        color={"green"}
+                        selectedAccentColor={selectedAccentColor}
+                        setThemeColor={setThemeColor}
+                    />
+                    <ThemeSwitch
+                        color={"red"}
+                        selectedAccentColor={selectedAccentColor}
+                        setThemeColor={setThemeColor}
+                    />
+
+                    {/* <div className="opacity-0 bg-red-accent bg-yellow-accent bg-green-accent"></div> */}
                 </div>
                 <nav className="ml-auto w-full xl:w-auto font-work font-medium text-sm xl:text-lg 2xl:text-xl">
                     <ul className="w-full flex flex-row justify-between xl:justify-start xl:space-x-16">
@@ -59,7 +65,7 @@ function TopNav({ className }: Props) {
     )
 
     function setThemeColor(color) {
-        setAccentColor(color);
+        setSelectedAccentColor(color);
 
         if (color == "yellow") {
             document.body.className = "";

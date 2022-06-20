@@ -257,3 +257,11 @@ select:-webkit-autofill:focus {
 .theme-blue {
     --accent: theme("colors.blue.accent");
 }
+
+.theme-green {
+    --accent: theme("colors.green.accent");
+}
+
+.theme-red {
+    --accent: theme("colors.red.accent");
+}
