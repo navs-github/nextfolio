@@ -24,6 +24,7 @@ function TopNav({ className }: Props) {
                 </div>
                 <div className="ml-12 hidden xl:flex flex-row items-center space-x-2">
                     <ThemeSwitch
+                        className="animate-slideup"
                         color={"yellow"}
                         selectedAccentColor={selectedAccentColor}
                         setThemeColor={setThemeColor}
@@ -34,6 +35,7 @@ function TopNav({ className }: Props) {
                         setThemeColor={setThemeColor}
                     /> */}
                     <ThemeSwitch
+                        className="animate-slideup50"
                         color={"red"}
                         selectedAccentColor={selectedAccentColor}
                         setThemeColor={setThemeColor}
