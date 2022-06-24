@@ -16,6 +16,10 @@ module.exports = {
     'bg-red-accent',
     'text-red-accent',
     'border-red-accent',
+
+    'bg-blue-accent',
+    'text-blue-accent',
+    'border-blue-accent',
   ],
   theme: {
     extend: {
@@ -37,6 +41,9 @@ module.exports = {
         },
         red: {
           accent: "#D8315B",
+        },
+        blue: {
+          accent: "#3160ED",
         },
         warm: '#EDEBD7',
         dark: '#0B0E13',

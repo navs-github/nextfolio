@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from 'next/link'
 
 import ThemeSwitch from "@components/inputs/ThemeSwitch";
@@ -9,7 +9,12 @@ type Props = {
     className?: string;
 }
 function TopNav({ className }: Props) {
-    const [selectedAccentColor, setSelectedAccentColor] = useState<string>('yellow');
+
+    const [selectedAccentColor, setSelectedAccentColor] = useState<string>();
+
+    useEffect(() => {
+        setSelectedAccentColor(document.body.className ? document.body.className.split("-")[1] : "yellow")
+    }, [])
 
     return (
         <header className={`${className} pt-8 xl:pt-12`}>
@@ -23,16 +28,21 @@ function TopNav({ className }: Props) {
                         selectedAccentColor={selectedAccentColor}
                         setThemeColor={setThemeColor}
                     />
-                    <ThemeSwitch
+                    {/* <ThemeSwitch
                         color={"green"}
                         selectedAccentColor={selectedAccentColor}
                         setThemeColor={setThemeColor}
-                    />
+                    /> */}
                     <ThemeSwitch
                         color={"red"}
                         selectedAccentColor={selectedAccentColor}
                         setThemeColor={setThemeColor}
                     />
+                    {/* <ThemeSwitch
+                        color={"blue"}
+                        selectedAccentColor={selectedAccentColor}
+                        setThemeColor={setThemeColor}
+                    /> */}
                 </div>
                 <nav className="ml-auto w-full xl:w-auto font-work font-medium text-sm xl:text-lg 2xl:text-xl">
                     <ul className="w-full flex flex-row justify-between xl:justify-start xl:space-x-16">
