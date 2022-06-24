@@ -107,6 +107,11 @@
         @apply font-bold;
         @apply font-lora;
     }
+
+    .text-link {
+        @apply hover:text-theme-accent;
+        @apply cursor-pointer;
+    }
 }
 
 /* Misc Element Globals */
@@ -124,6 +129,10 @@ select:-webkit-autofill:focus {
 
 :root {
     --accent: theme("colors.yellow.accent");
+}
+
+.theme-blue {
+    --accent: theme("colors.blue.accent");
 }
 
 .theme-green {
