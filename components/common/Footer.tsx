@@ -1,12 +1,12 @@
-import Link from 'next/link'
+import Link from "next/link"
 
-import Logo from '@components/logos/Logo'
-import LogoDribbble from '@components/logos/LogoDribbble'
-import LogoAngel from '@components/logos/LogoAngel'
-import LogoGithub from '@components/logos/LogoGithub'
-import LogoLinkedin from '@components/logos/LogoLinkedin'
-import LogoInstagram from '@components/logos/LogoInstagram'
-import LogoSpotify from '@components/logos/LogoSpotify'
+import Logo from "@components/logos/Logo"
+import LogoDribbble from "@components/logos/LogoDribbble"
+import LogoAngel from "@components/logos/LogoAngel"
+import LogoGithub from "@components/logos/LogoGithub"
+import LogoLinkedin from "@components/logos/LogoLinkedin"
+import LogoInstagram from "@components/logos/LogoInstagram"
+import LogoSpotify from "@components/logos/LogoSpotify"
 
 interface Props {
     className?: string;
@@ -28,7 +28,7 @@ function Footer({ className }: Props) {
                         <li className=""><LogoSpotify></LogoSpotify></li>
                     </ul>
                     <span className="mt-8">Based in Toronto</span>
-                    <span className="mt-2 text-sm">© 2021 Abhinav Verma | All Rights Reserved</span>
+                    <span className="mt-2 text-sm">© 2022 Abhinav Verma | All Rights Reserved</span>
                 </nav>
                 <nav className="flex flex-row space-x-20">
                     <ul className="flex flex-col space-y-4">
