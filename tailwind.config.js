@@ -71,6 +71,10 @@ module.exports = {
           '0%': { transform: 'translateX(0px)' },
           '100%': { transform: 'translateX(30px)' },
         },
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        }
       },
       animation: {
         'slideup': 'slideup 1.2s ease forwards',
@@ -79,12 +83,17 @@ module.exports = {
         'slideup150': 'slideup 1.2s ease 0.15s forwards',
         'slideup200': 'slideup 1.2s ease 0.2s forwards',
         'slideupalt': 'slideup 1.2s ease forwards',
+
         'fadein': 'fadein 0.8s ease 0.75s forwards',
         'fadeinfaster': 'fadein 0.8s ease 0.325s forwards',
+
         'slideright': 'slideright 1s ease-out',
         'slideright200': 'slideright 1s ease-out 0.2s',
         'sliderightalt': 'sliderightalt 2s ease-out 2 alternate forwards',
-        'slidedown': 'slidedown 1s ease-in-out'
+
+        'slidedown': 'slidedown 1s ease-in-out',
+
+        'spin-slow': 'spin 12s linear infinite',
       },
       fontFamily: {
         inter: ['Inter'],
